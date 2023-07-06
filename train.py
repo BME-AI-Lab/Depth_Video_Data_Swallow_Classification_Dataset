@@ -194,6 +194,7 @@ if __name__ == "__main__":
         )
         writer.flush()
 
+        #Here uses accuracy which can avoid divide by zero issue when training at the beginning
         if avg_vloss < best_vloss or report["accuracy"] > best_acc:
             if avg_vloss < best_vloss:
                 best_vloss = avg_vloss
