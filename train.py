@@ -199,7 +199,7 @@ if __name__ == "__main__":
                 best_vloss = avg_vloss
             if report["accuracy"] > best_acc:
                 best_acc = report["accuracy"]
-            model_path = "X3D_{}_{}_ns4_fps2_LeakyReLUtan06_new".format(
+            model_path = "model_path".format(
                 timestamp, epoch_number
             )
             torch.save(model.state_dict(), model_path)
