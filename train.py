@@ -94,7 +94,7 @@ if __name__ == "__main__":
 
     model = make_x3d().to(device)
 
-    num_epochs = 300
+    num_epochs = 200
     criterion = nn.CrossEntropyLoss().to(device)
     optimizer = optim.Adam(
         model.parameters(), lr=1e-4
